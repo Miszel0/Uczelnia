@@ -1,10 +1,10 @@
 package Models;
 
 public class Candidate {
-    String name;
-    String surname;
-    CandidateSubjectScoreList candidateSubjectScoreList;
-    Major major;
+    private String name;
+    private String surname;
+    private CandidateSubjectScoreList candidateSubjectScoreList;
+    private Major major;
 
 
     private Candidate(String name, String surname, Major major) {
