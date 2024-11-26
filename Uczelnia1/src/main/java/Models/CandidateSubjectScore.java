@@ -10,12 +10,12 @@ public class CandidateSubjectScore {
         this.subject = subject;
     }
 
-    public float getScore() {
+    public int getScore() {
         return score;
     }
 
 
-    public void setScore(float price) {
+    public void setScore(int score) {
         if (CandidateSubjectScore.ScoreValidator.getInstance().isValid(score)) {
             this.score = score;
         }
