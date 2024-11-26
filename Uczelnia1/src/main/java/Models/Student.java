@@ -4,9 +4,9 @@ import Models.Candidate;
 import Models.Major;
 
 public class Student {
-    String name;
-    String surname;
-    Major major;
+    private String name;
+    private String surname;
+    private Major major;
 
     private Student(Candidate candidate) {
         setNameFromCandidate(candidate);
