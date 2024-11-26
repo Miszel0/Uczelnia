@@ -6,13 +6,13 @@ import java.util.List;
 public class CandidateSubjectScoreList {
 
     private static final List<CandidateSubjectScore> list = new LinkedList<>();
-
-    public static void addScore(CandidateSubject subject, double score) {
-        list.add(new CandidateSubjectScore(0, CandidateSubject.ENG));
+    
+    public static void addScore(CandidateSubjectScore candidateSubjectScore) {
+        list.add(candidateSubjectScore);
     }
 
-    public static void removeScore(CandidateSubject subject, double score) {
-        list.remove(new CandidateSubjectScore(0, CandidateSubject.ENG));
+    public static void removeScore(CandidateSubjectScore candidateSubjectScore) {
+        list.remove(candidateSubjectScore);
     }
 
 
