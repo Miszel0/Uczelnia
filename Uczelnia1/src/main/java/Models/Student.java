@@ -8,10 +8,10 @@ public class Student {
     String surname;
     Major major;
 
-    private Student(Candidate Candidate) {
-        setNameFromCandidate(Candidate);
-        setSurnameFromCandidate(Candidate);
-        setMajorFromCandidate(Candidate);
+    private Student(Candidate candidate) {
+        setNameFromCandidate(candidate);
+        setSurnameFromCandidate(candidate);
+        setMajorFromCandidate(candidate);
     }
 
     public String getName() {
@@ -22,16 +22,16 @@ public class Student {
     }
 
 
-    public void setNameFromCandidate(Candidate Candidate) {
-        this.name = Candidate.getName();
+    public void setNameFromCandidate(Candidate candidate) {
+        this.name = candidate.getName();
     }
 
-    public void setSurnameFromCandidate(Candidate Candidate) {
-        this.surname = Candidate.getSurname();
+    public void setSurnameFromCandidate(Candidate candidate) {
+        this.surname = candidate.getSurname();
     }
 
-    public void setMajorFromCandidate(Candidate Candidate) {
-        this.major = Candidate.getMajor();
+    public void setMajorFromCandidate(Candidate candidate) {
+        this.major = candidate.getMajor();
     }
 
     public Major getMajor() {
